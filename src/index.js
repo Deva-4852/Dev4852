@@ -2,11 +2,23 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Navbar from './components/Navbar';
 import reportWebVitals from './reportWebVitals';
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    
+    
+      <body className="bg-white dark:bg-black transition-all">
+        <main>
+          <div className="absolute w-full right-0 top-0">
+            <Navbar />
+          </div>
+          <App />
+        </main>
+      </body>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
